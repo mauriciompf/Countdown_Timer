@@ -1,0 +1,63 @@
+html {
+  color-scheme: dark light;
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.initial {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 1.5rem;
+}
+
+body {
+  height: 90vh;
+  display: grid;
+  place-items: center;
+}
+
+.wrap {
+  text-align: center;
+  display: none;
+}
+
+.stopwatch-wrap.active {
+  display: block;
+}
+
+span {
+  font-size: 5em;
+}
+
+.button-box {
+  display: flex;
+  gap: 2rem;
+  margin-block-start: 1rem;
+}
+
+button {
+  font-size: 1.5em;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+button:hover,
+button:focus {
+  background-color: white;
+  color: black;
+}
+
+button[disabled] {
+  background-color: rgb(153, 74, 74);
+  color: white;
+}
+
+.disabled-button {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
